@@ -1,34 +1,44 @@
 # Ouroboros Sass/CSS Spinner
 
-The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own tail. Inspired by application progress spinners this provides an imageless 'throbber' that eats itself, more or less, for modern browsers.
+See blog entry at [http://atomeye.com/projects/sass-css-spinner.html](http://atomeye.com/projects/sass-css-spinner.html) for more details.
+
+The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own tail. Inspired by application progress spinners this provides an imageless 'throbber' for modern browsers that eats itself (in a way).
 
 ## Browser Support
 
-Works in Chrome 24+, Firefox 18+, IE 10+, Opera. A standard animated gif is provided as a fall back for older versions of IE.
+- Chrome 24+
+- Firefox 18+
+- IE 10+
+- Opera 12+
+
+A standard 32x32 animated gif throbber is provided as a fallback for older versions of IE. It is centered where the spinner animation would have been.
 
 ## Usage
 
-1. For Sass users drop the `_ui-spinner.scss` into your project.
-2. Refer to the examples in `example.scss` and use defaults or pass in any arguments.
+1. For Sass users add the `_ui-spinner.scss` into your project.
+2. If you want IE < 10 support also add the `spinner-old-ie.scss` and the throbber.gif. You can include it with an IE conditional tag. See the example in `index.html`.
 
-    @include ui-spinner; // Will use defaults.
+        <!--[if IE]><link media="screen" type="text/css" href="stylesheets/spinner-old-ie.css" rel="stylesheet" /><![endif]-->
 
-    @include ui-spinner(#fff,60px,gray,purple,.7,4s); // Will use these variables.
+3. In our project Sass use the `ui-spinner` mixin with defaults or pass in any arguments. Also see the mixin examples in `example.scss`.
 
-3. Use with the following HTML:
+        @include ui-spinner; // Will use defaults.
+        @include ui-spinner(#fff, 60px, gray, purple, .7, 4s); // Will use these variables.
 
-    <div class="ui-spinner">
-        <span class="side side-left">
-            <span class="fill"></span>
-        </span>
-        <span class="side side-right">
-            <span class="fill"></span>
-        </span>
-    </div>
+4. Use with the following HTML. Also see the HTML examples in `index.html`.
 
-You can also refer to the examples in `index.html`.
+        <div class="ui-spinner">
+            <span class="side side-left">
+                <span class="fill"></span>
+            </span>
+            <span class="side side-right">
+                <span class="fill"></span>
+            </span>
+        </div>
 
-The 6 optional parameters:
+
+
+### The 6 Optional Parameters
 
 | Parameter      | Description           | Defaults |
 | ------------- |-------------| ----- |
@@ -39,7 +49,7 @@ The 6 optional parameters:
 | Opacity | The opacity of the spinner      |    .8 |
 | Duration | Speed of the spinner     |   3s |
 
-The hole color is just to fake a ring spinner. You'd have to match the color you pass here to the background you want to use it against.
+The hole color is just to fake a ring spinner. You have to match the color you pass into the mixin to the background-color that the spinner will appear against.
 
 
 ## Don't Use Sass?
