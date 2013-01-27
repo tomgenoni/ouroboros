@@ -1,5 +1,7 @@
 .ui-spinner {
     background: url(../i/throbber.gif) no-repeat center center !important;
+    min-width: 32px;
+    min-height: 32px;
     &:after {
         display: none !important;
     }

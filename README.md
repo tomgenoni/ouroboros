@@ -28,10 +28,10 @@ Works in Chrome 24+, Firefox 18+, IE 10+, Opera. A standard animated gif is prov
 
     <div class="ui-spinner">
         <span class="side side-left">
-            <em class="fill"></em>
+            <span class="fill"></span>
         </span>
         <span class="side side-right">
-            <em class="fill"></em>
+            <span class="fill"></span>
         </span>
     </div>
 
