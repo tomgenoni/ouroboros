@@ -231,14 +231,14 @@
 }
 
 /* line 25, ../sass/_ui-spinner.scss */
-.example-default .ui-spinner {
+.ui-spinner {
   width: 46px;
   height: 46px;
   background: #dddddd;
   opacity: 0.8;
 }
 /* line 31, ../sass/_ui-spinner.scss */
-.example-default .ui-spinner .side .fill {
+.ui-spinner .side .fill {
   background: #3c76ca;
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -247,7 +247,7 @@
   animation-duration: 3s;
 }
 /* line 36, ../sass/_ui-spinner.scss */
-.example-default .ui-spinner:after {
+.ui-spinner:after {
   content: "";
   background: transparent;
   position: absolute;

@@ -1,14 +1,15 @@
 @import "compass/css3/transition";
 @import 'ui-spinner';
 
-.example-default {
-    @include ui-spinner;
-}
+// Default settings.
+@include ui-spinner;
 
+// Default settings plus the donut hole.
 .example-hole {
     @include ui-spinner(#fff);
 }
 
+// Large spinner, different colors, spinning more slowly.
 .example-large {
     @include ui-spinner(transparent,100px,#bbb,#ea7b3a,1,5s);
 }
