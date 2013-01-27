@@ -2,7 +2,7 @@
 // Optional 6 parameters for mixin 'ui-spinner'.
 // Defaults are as follows.
 
-$default-ring-color: transparent;
+$default-hole-color: transparent;
 $default-size: 46px;
 $default-bkg-color-light: #ddd;
 $default-bkg-color-dark: #3c76ca;
@@ -15,7 +15,7 @@ $default-duration: 3s;
 }
 
 @mixin ui-spinner(
-    $ring-color: $default-ring-color,
+    $hole-color: $default-hole-color,
     $size: $default-size,
     $bkg-color-light: $default-bkg-color-light,
     $bkg-color-dark: $default-bkg-color-dark,
@@ -34,16 +34,16 @@ $default-duration: 3s;
         }
 
         &:after {
-            $ring-size: round((strip-units($size)*.6)) + px;
-            $ring-position: round((strip-units($size)*.2)) + px;
+            $hole-size: round((strip-units($size)*.6)) + px;
+            $hole-position: round((strip-units($size)*.2)) + px;
             content: "";
-            background: $ring-color;
+            background: $hole-color;
             position: absolute;
-            width: $ring-size;
-            height: $ring-size;
+            width: $hole-size;
+            height: $hole-size;
             border-radius: 50%;
-            top: $ring-position;
-            left: $ring-position;
+            top: $hole-position;
+            left: $hole-position;
             display: block;
         }
     }

@@ -1,178 +1,178 @@
 @-webkit-keyframes ui-spinner-rotate-right {
-  /* line 53, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 53, ../sass/_ui-spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 54, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 54, ../sass/_ui-spinner.scss */
   25% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 55, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 55, ../sass/_ui-spinner.scss */
   50% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 56, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 56, ../sass/_ui-spinner.scss */
   75% {
     -webkit-transform: rotate(360deg);
   }
 
-  /* line 57, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 57, ../sass/_ui-spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes ui-spinner-rotate-left {
-  /* line 61, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 61, ../sass/_ui-spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 62, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 62, ../sass/_ui-spinner.scss */
   25% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 63, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 63, ../sass/_ui-spinner.scss */
   50% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 64, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 64, ../sass/_ui-spinner.scss */
   75% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 65, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 65, ../sass/_ui-spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes ui-spinner-rotate-right {
-  /* line 69, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 69, ../sass/_ui-spinner.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 70, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 70, ../sass/_ui-spinner.scss */
   25% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 71, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 71, ../sass/_ui-spinner.scss */
   50% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 72, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 72, ../sass/_ui-spinner.scss */
   75% {
     -moz-transform: rotate(360deg);
   }
 
-  /* line 73, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 73, ../sass/_ui-spinner.scss */
   100% {
     -moz-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes ui-spinner-rotate-left {
-  /* line 77, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 77, ../sass/_ui-spinner.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 78, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 78, ../sass/_ui-spinner.scss */
   25% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 79, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 79, ../sass/_ui-spinner.scss */
   50% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 80, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 80, ../sass/_ui-spinner.scss */
   75% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 81, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 81, ../sass/_ui-spinner.scss */
   100% {
     -moz-transform: rotate(360deg);
   }
 }
 
 @keyframes ui-spinner-rotate-right {
-  /* line 85, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 85, ../sass/_ui-spinner.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 86, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 86, ../sass/_ui-spinner.scss */
   25% {
     transform: rotate(180deg);
   }
 
-  /* line 87, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 87, ../sass/_ui-spinner.scss */
   50% {
     transform: rotate(180deg);
   }
 
-  /* line 88, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 88, ../sass/_ui-spinner.scss */
   75% {
     transform: rotate(360deg);
   }
 
-  /* line 89, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 89, ../sass/_ui-spinner.scss */
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes ui-spinner-rotate-left {
-  /* line 93, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 93, ../sass/_ui-spinner.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 94, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 94, ../sass/_ui-spinner.scss */
   25% {
     transform: rotate(0deg);
   }
 
-  /* line 95, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 95, ../sass/_ui-spinner.scss */
   50% {
     transform: rotate(180deg);
   }
 
-  /* line 96, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 96, ../sass/_ui-spinner.scss */
   75% {
     transform: rotate(180deg);
   }
 
-  /* line 97, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+  /* line 97, ../sass/_ui-spinner.scss */
   100% {
     transform: rotate(360deg);
   }
 }
 
-/* line 100, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 100, ../sass/_ui-spinner.scss */
 .ui-spinner {
   position: relative;
   border-radius: 100%;
 }
-/* line 104, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 104, ../sass/_ui-spinner.scss */
 .ui-spinner .side {
   width: 50%;
   height: 100%;
   overflow: hidden;
   position: absolute;
 }
-/* line 110, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 110, ../sass/_ui-spinner.scss */
 .ui-spinner .side .fill {
   border-radius: 999px;
   position: absolute;
@@ -189,11 +189,11 @@
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-/* line 120, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 120, ../sass/_ui-spinner.scss */
 .ui-spinner .side-left {
   left: 0;
 }
-/* line 123, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 123, ../sass/_ui-spinner.scss */
 .ui-spinner .side-left .fill {
   left: 100%;
   border-top-left-radius: 0;
@@ -209,11 +209,11 @@
   -o-transform-origin: 0 50%;
   transform-origin: 0 50%;
 }
-/* line 132, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 132, ../sass/_ui-spinner.scss */
 .ui-spinner .side-right {
   left: 50%;
 }
-/* line 135, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 135, ../sass/_ui-spinner.scss */
 .ui-spinner .side-right .fill {
   left: -100%;
   border-top-right-radius: 0;
@@ -230,14 +230,14 @@
   transform-origin: 100% 50%;
 }
 
-/* line 25, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 25, ../sass/_ui-spinner.scss */
 .example-default .ui-spinner {
   width: 46px;
   height: 46px;
   background: #dddddd;
   opacity: 0.8;
 }
-/* line 31, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 31, ../sass/_ui-spinner.scss */
 .example-default .ui-spinner .side .fill {
   background: #3c76ca;
   -webkit-animation-duration: 3s;
@@ -246,7 +246,7 @@
   -o-animation-duration: 3s;
   animation-duration: 3s;
 }
-/* line 36, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 36, ../sass/_ui-spinner.scss */
 .example-default .ui-spinner:after {
   content: "";
   background: transparent;
@@ -259,15 +259,15 @@
   display: block;
 }
 
-/* line 25, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
-.example-ring .ui-spinner {
+/* line 25, ../sass/_ui-spinner.scss */
+.example-hole .ui-spinner {
   width: 46px;
   height: 46px;
   background: #dddddd;
   opacity: 0.8;
 }
-/* line 31, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
-.example-ring .ui-spinner .side .fill {
+/* line 31, ../sass/_ui-spinner.scss */
+.example-hole .ui-spinner .side .fill {
   background: #3c76ca;
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -275,8 +275,8 @@
   -o-animation-duration: 3s;
   animation-duration: 3s;
 }
-/* line 36, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
-.example-ring .ui-spinner:after {
+/* line 36, ../sass/_ui-spinner.scss */
+.example-hole .ui-spinner:after {
   content: "";
   background: white;
   position: absolute;
@@ -288,23 +288,23 @@
   display: block;
 }
 
-/* line 25, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 25, ../sass/_ui-spinner.scss */
 .example-large .ui-spinner {
   width: 100px;
   height: 100px;
-  background: gray;
+  background: #bbbbbb;
   opacity: 1;
 }
-/* line 31, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 31, ../sass/_ui-spinner.scss */
 .example-large .ui-spinner .side .fill {
-  background: purple;
+  background: #ea7b3a;
   -webkit-animation-duration: 5s;
   -moz-animation-duration: 5s;
   -ms-animation-duration: 5s;
   -o-animation-duration: 5s;
   animation-duration: 5s;
 }
-/* line 36, /Library/WebServer/Documents/ouroboros/sass/_spinner.scss */
+/* line 36, ../sass/_ui-spinner.scss */
 .example-large .ui-spinner:after {
   content: "";
   background: transparent;

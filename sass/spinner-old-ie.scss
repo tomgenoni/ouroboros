@@ -1,0 +1,9 @@
+.ui-spinner {
+    background: url(../i/throbber.gif) no-repeat center center !important;
+    &:after {
+        display: none !important;
+    }
+    .side {
+        display: none !important;
+    }
+}
