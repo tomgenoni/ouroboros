@@ -1,0 +1,142 @@
+// # CSS Spinner
+// Optional 6 params: opacity and spin duration, defaults to values below.
+
+$default-size: 46px;
+$default-bkg-color-1: #ddd;
+$default-bkg-color-2: #3c76ca;
+$default-opacity: .8;
+$default-duration: 3s;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@mixin ui-spinner(
+    $ring: false,
+    $size: $default-size,
+    $bkg-color-1: $default-bkg-color-1,
+    $bkg-color-2: $default-bkg-color-2,
+    $opacity: $default-opacity,
+    $duration: $default-duration
+    ) {
+    .ui-spinner {
+        width: $size;
+        height: $size;
+        background: $bkg-color-1;
+        opacity: $opacity;
+
+        .side .fill {
+            background: $bkg-color-2;
+            @include experimental(animation-duration, $duration);
+        }
+
+        @if $ring {
+            &:after {
+                $ring-size: round((strip-units($size)*.6)) + px;
+                $ring-position: round((strip-units($size)*.2)) + px;
+                content: "";
+                background: $ring;
+                position: absolute;
+                width: $ring-size;
+                height: $ring-size;
+                border-radius: 50%;
+                top: $ring-position;
+                left: $ring-position;
+                display: block;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes ui-spinner-rotate-right {
+    0% {    -webkit-transform: rotate(0deg); }
+    25% {   -webkit-transform: rotate(180deg); }
+    50% {   -webkit-transform: rotate(180deg); }
+    75% {   -webkit-transform: rotate(360deg); }
+    100% {  -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes ui-spinner-rotate-left {
+    0% {    -webkit-transform: rotate(0deg); }
+    25% {   -webkit-transform: rotate(0deg); }
+    50% {   -webkit-transform: rotate(180deg); }
+    75% {   -webkit-transform: rotate(180deg); }
+    100% {  -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes ui-spinner-rotate-right {
+    0% {    -moz-transform: rotate(0deg); }
+    25% {   -moz-transform: rotate(180deg); }
+    50% {   -moz-transform: rotate(180deg); }
+    75% {   -moz-transform: rotate(360deg); }
+    100% {  -moz-transform: rotate(360deg); }
+}
+
+@-moz-keyframes ui-spinner-rotate-left {
+    0% {    -moz-transform: rotate(0deg); }
+    25% {   -moz-transform: rotate(0deg); }
+    50% {   -moz-transform: rotate(180deg); }
+    75% {   -moz-transform: rotate(180deg); }
+    100% {  -moz-transform: rotate(360deg); }
+}
+
+@keyframes ui-spinner-rotate-right {
+    0% {    transform: rotate(0deg); }
+    25% {   transform: rotate(180deg); }
+    50% {   transform: rotate(180deg); }
+    75% {   transform: rotate(360deg); }
+    100% {  transform: rotate(360deg); }
+}
+
+@keyframes ui-spinner-rotate-left {
+    0% {    transform: rotate(0deg); }
+    25% {   transform: rotate(0deg); }
+    50% {   transform: rotate(180deg); }
+    75% {   transform: rotate(180deg); }
+    100% {  transform: rotate(360deg); }
+}
+
+.ui-spinner {
+    position: relative;
+    border-radius: 100%;
+
+    .side {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+
+       .fill {
+            border-radius: 999px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include experimental(animation-iteration-count, infinite);
+            @include experimental(animation-timing-function, linear);
+        }
+    }
+
+    .side-left {
+        left: 0;
+
+        .fill {
+            left: 100%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            @include experimental(animation-name, ui-spinner-rotate-left);
+            @include experimental(transform-origin, 0 50%);
+        }
+    }
+
+    .side-right {
+        left: 50%;
+
+        .fill {
+            left: -100%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            @include experimental(animation-name, ui-spinner-rotate-right);
+            @include experimental(transform-origin, 100% 50%);
+        }
+    }
+}
