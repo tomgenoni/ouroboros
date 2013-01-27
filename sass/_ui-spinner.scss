@@ -27,27 +27,30 @@ $default-duration: 3s;
         width: $size;
         height: $size;
         background: $bkg-color-light;
-        opacity: $opacity;
 
-        .side .fill {
-            background: $bkg-color-dark;
-            @include experimental(animation-duration, $duration);
-        }
+        .side {
+            opacity: $opacity;
 
-        // This is the 'hole' that creates the ring. It's size is determined by the
-        // size of the spinner.
-        &:after {
-            $hole-size: round((strip-units($size)*.6)) + px;
-            $hole-position: round((strip-units($size)*.2)) + px;
-            content: "";
-            background: $hole-color;
-            position: absolute;
-            width: $hole-size;
-            height: $hole-size;
-            border-radius: 50%;
-            top: $hole-position;
-            left: $hole-position;
-            display: block;
+            .fill {
+                background: $bkg-color-dark;
+                @include experimental(animation-duration, $duration);
+            }
+
+            // This is the 'hole' that creates the ring. It's size is determined by the
+            // size of the spinner.
+            &:after {
+                $hole-size: round((strip-units($size)*.6)) + px;
+                $hole-position: round((strip-units($size)*.2)) + px;
+                content: "";
+                background: $hole-color;
+                position: absolute;
+                width: $hole-size;
+                height: $hole-size;
+                border-radius: 50%;
+                top: $hole-position;
+                left: $hole-position;
+                display: block;
+            }
         }
     }
 }

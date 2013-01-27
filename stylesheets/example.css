@@ -1,178 +1,178 @@
 @-webkit-keyframes ui-spinner-rotate-right {
-  /* line 58, ../sass/_ui-spinner.scss */
+  /* line 61, ../sass/_ui-spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 59, ../sass/_ui-spinner.scss */
+  /* line 62, ../sass/_ui-spinner.scss */
   25% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 60, ../sass/_ui-spinner.scss */
+  /* line 63, ../sass/_ui-spinner.scss */
   50% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 61, ../sass/_ui-spinner.scss */
+  /* line 64, ../sass/_ui-spinner.scss */
   75% {
     -webkit-transform: rotate(360deg);
   }
 
-  /* line 62, ../sass/_ui-spinner.scss */
+  /* line 65, ../sass/_ui-spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes ui-spinner-rotate-left {
-  /* line 66, ../sass/_ui-spinner.scss */
+  /* line 69, ../sass/_ui-spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 67, ../sass/_ui-spinner.scss */
+  /* line 70, ../sass/_ui-spinner.scss */
   25% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 68, ../sass/_ui-spinner.scss */
+  /* line 71, ../sass/_ui-spinner.scss */
   50% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 69, ../sass/_ui-spinner.scss */
+  /* line 72, ../sass/_ui-spinner.scss */
   75% {
     -webkit-transform: rotate(180deg);
   }
 
-  /* line 70, ../sass/_ui-spinner.scss */
+  /* line 73, ../sass/_ui-spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes ui-spinner-rotate-right {
-  /* line 74, ../sass/_ui-spinner.scss */
+  /* line 77, ../sass/_ui-spinner.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 75, ../sass/_ui-spinner.scss */
+  /* line 78, ../sass/_ui-spinner.scss */
   25% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 76, ../sass/_ui-spinner.scss */
+  /* line 79, ../sass/_ui-spinner.scss */
   50% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 77, ../sass/_ui-spinner.scss */
+  /* line 80, ../sass/_ui-spinner.scss */
   75% {
     -moz-transform: rotate(360deg);
   }
 
-  /* line 78, ../sass/_ui-spinner.scss */
+  /* line 81, ../sass/_ui-spinner.scss */
   100% {
     -moz-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes ui-spinner-rotate-left {
-  /* line 82, ../sass/_ui-spinner.scss */
+  /* line 85, ../sass/_ui-spinner.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 83, ../sass/_ui-spinner.scss */
+  /* line 86, ../sass/_ui-spinner.scss */
   25% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 84, ../sass/_ui-spinner.scss */
+  /* line 87, ../sass/_ui-spinner.scss */
   50% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 85, ../sass/_ui-spinner.scss */
+  /* line 88, ../sass/_ui-spinner.scss */
   75% {
     -moz-transform: rotate(180deg);
   }
 
-  /* line 86, ../sass/_ui-spinner.scss */
+  /* line 89, ../sass/_ui-spinner.scss */
   100% {
     -moz-transform: rotate(360deg);
   }
 }
 
 @keyframes ui-spinner-rotate-right {
-  /* line 90, ../sass/_ui-spinner.scss */
+  /* line 93, ../sass/_ui-spinner.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 91, ../sass/_ui-spinner.scss */
+  /* line 94, ../sass/_ui-spinner.scss */
   25% {
     transform: rotate(180deg);
   }
 
-  /* line 92, ../sass/_ui-spinner.scss */
+  /* line 95, ../sass/_ui-spinner.scss */
   50% {
     transform: rotate(180deg);
   }
 
-  /* line 93, ../sass/_ui-spinner.scss */
+  /* line 96, ../sass/_ui-spinner.scss */
   75% {
     transform: rotate(360deg);
   }
 
-  /* line 94, ../sass/_ui-spinner.scss */
+  /* line 97, ../sass/_ui-spinner.scss */
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes ui-spinner-rotate-left {
-  /* line 98, ../sass/_ui-spinner.scss */
+  /* line 101, ../sass/_ui-spinner.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 99, ../sass/_ui-spinner.scss */
+  /* line 102, ../sass/_ui-spinner.scss */
   25% {
     transform: rotate(0deg);
   }
 
-  /* line 100, ../sass/_ui-spinner.scss */
+  /* line 103, ../sass/_ui-spinner.scss */
   50% {
     transform: rotate(180deg);
   }
 
-  /* line 101, ../sass/_ui-spinner.scss */
+  /* line 104, ../sass/_ui-spinner.scss */
   75% {
     transform: rotate(180deg);
   }
 
-  /* line 102, ../sass/_ui-spinner.scss */
+  /* line 105, ../sass/_ui-spinner.scss */
   100% {
     transform: rotate(360deg);
   }
 }
 
-/* line 110, ../sass/_ui-spinner.scss */
+/* line 113, ../sass/_ui-spinner.scss */
 .ui-spinner {
   position: relative;
   border-radius: 100%;
 }
-/* line 114, ../sass/_ui-spinner.scss */
+/* line 117, ../sass/_ui-spinner.scss */
 .ui-spinner .side {
   width: 50%;
   height: 100%;
   overflow: hidden;
   position: absolute;
 }
-/* line 120, ../sass/_ui-spinner.scss */
+/* line 123, ../sass/_ui-spinner.scss */
 .ui-spinner .side .fill {
   border-radius: 999px;
   position: absolute;
@@ -189,11 +189,11 @@
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-/* line 130, ../sass/_ui-spinner.scss */
+/* line 133, ../sass/_ui-spinner.scss */
 .ui-spinner .side-left {
   left: 0;
 }
-/* line 133, ../sass/_ui-spinner.scss */
+/* line 136, ../sass/_ui-spinner.scss */
 .ui-spinner .side-left .fill {
   left: 100%;
   border-top-left-radius: 0;
@@ -209,11 +209,11 @@
   -o-transform-origin: 0 50%;
   transform-origin: 0 50%;
 }
-/* line 142, ../sass/_ui-spinner.scss */
+/* line 145, ../sass/_ui-spinner.scss */
 .ui-spinner .side-right {
   left: 50%;
 }
-/* line 145, ../sass/_ui-spinner.scss */
+/* line 148, ../sass/_ui-spinner.scss */
 .ui-spinner .side-right .fill {
   left: -100%;
   border-top-right-radius: 0;
@@ -235,9 +235,12 @@
   width: 46px;
   height: 46px;
   background: #dddddd;
+}
+/* line 31, ../sass/_ui-spinner.scss */
+.ui-spinner .side {
   opacity: 0.8;
 }
-/* line 32, ../sass/_ui-spinner.scss */
+/* line 34, ../sass/_ui-spinner.scss */
 .ui-spinner .side .fill {
   background: #3c76ca;
   -webkit-animation-duration: 3s;
@@ -246,8 +249,8 @@
   -o-animation-duration: 3s;
   animation-duration: 3s;
 }
-/* line 39, ../sass/_ui-spinner.scss */
-.ui-spinner:after {
+/* line 41, ../sass/_ui-spinner.scss */
+.ui-spinner .side:after {
   content: "";
   background: transparent;
   position: absolute;
@@ -264,9 +267,12 @@
   width: 46px;
   height: 46px;
   background: #dddddd;
+}
+/* line 31, ../sass/_ui-spinner.scss */
+.example-hole .ui-spinner .side {
   opacity: 0.8;
 }
-/* line 32, ../sass/_ui-spinner.scss */
+/* line 34, ../sass/_ui-spinner.scss */
 .example-hole .ui-spinner .side .fill {
   background: #3c76ca;
   -webkit-animation-duration: 3s;
@@ -275,8 +281,8 @@
   -o-animation-duration: 3s;
   animation-duration: 3s;
 }
-/* line 39, ../sass/_ui-spinner.scss */
-.example-hole .ui-spinner:after {
+/* line 41, ../sass/_ui-spinner.scss */
+.example-hole .ui-spinner .side:after {
   content: "";
   background: white;
   position: absolute;
@@ -293,9 +299,12 @@
   width: 100px;
   height: 100px;
   background: #bbbbbb;
+}
+/* line 31, ../sass/_ui-spinner.scss */
+.example-large .ui-spinner .side {
   opacity: 1;
 }
-/* line 32, ../sass/_ui-spinner.scss */
+/* line 34, ../sass/_ui-spinner.scss */
 .example-large .ui-spinner .side .fill {
   background: #ea7b3a;
   -webkit-animation-duration: 5s;
@@ -304,8 +313,8 @@
   -o-animation-duration: 5s;
   animation-duration: 5s;
 }
-/* line 39, ../sass/_ui-spinner.scss */
-.example-large .ui-spinner:after {
+/* line 41, ../sass/_ui-spinner.scss */
+.example-large .ui-spinner .side:after {
   content: "";
   background: transparent;
   position: absolute;
