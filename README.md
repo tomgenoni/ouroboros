@@ -1,6 +1,6 @@
-# Ouroboros CSS Spinner
+# Ouroboros Sass/CSS Spinner
 
-This provides a ui spinner, a.k.a 'throbber', for modern browsers.
+The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own tail. Inspired by application progress spinners this provides an imageless 'throbber' that eats itself, more or less, for modern browsers.
 
 Built with Sass, it takes 6 optional parameters.
 
