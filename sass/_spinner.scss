@@ -1,49 +1,50 @@
 // # CSS Spinner
-// Optional 6 params: opacity and spin duration, defaults to values below.
+// Optional 6 parameters for mixin 'ui-spinner'.
+// Defaults are as follows.
 
+$default-ring-color: transparent;
 $default-size: 46px;
-$default-bkg-color-1: #ddd;
-$default-bkg-color-2: #3c76ca;
+$default-bkg-color-light: #ddd;
+$default-bkg-color-dark: #3c76ca;
 $default-opacity: .8;
 $default-duration: 3s;
 
+// Need to remove the units to do some math.
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
 
 @mixin ui-spinner(
-    $ring: false,
+    $ring-color: $default-ring-color,
     $size: $default-size,
-    $bkg-color-1: $default-bkg-color-1,
-    $bkg-color-2: $default-bkg-color-2,
+    $bkg-color-light: $default-bkg-color-light,
+    $bkg-color-dark: $default-bkg-color-dark,
     $opacity: $default-opacity,
     $duration: $default-duration
     ) {
     .ui-spinner {
         width: $size;
         height: $size;
-        background: $bkg-color-1;
+        background: $bkg-color-light;
         opacity: $opacity;
 
         .side .fill {
-            background: $bkg-color-2;
+            background: $bkg-color-dark;
             @include experimental(animation-duration, $duration);
         }
 
-        @if $ring {
-            &:after {
-                $ring-size: round((strip-units($size)*.6)) + px;
-                $ring-position: round((strip-units($size)*.2)) + px;
-                content: "";
-                background: $ring;
-                position: absolute;
-                width: $ring-size;
-                height: $ring-size;
-                border-radius: 50%;
-                top: $ring-position;
-                left: $ring-position;
-                display: block;
-            }
+        &:after {
+            $ring-size: round((strip-units($size)*.6)) + px;
+            $ring-position: round((strip-units($size)*.2)) + px;
+            content: "";
+            background: $ring-color;
+            position: absolute;
+            width: $ring-size;
+            height: $ring-size;
+            border-radius: 50%;
+            top: $ring-position;
+            left: $ring-position;
+            display: block;
         }
     }
 }

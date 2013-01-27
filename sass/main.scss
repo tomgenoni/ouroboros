@@ -1,3 +1,14 @@
 @import "compass/css3/transition";
 @import 'spinner';
-@include ui-spinner(#fff);
+
+.example-default {
+    @include ui-spinner;
+}
+
+.example-ring {
+    @include ui-spinner(#fff);
+}
+
+.example-large {
+    @include ui-spinner(transparent,100px,gray,purple,1,5s);
+}
