@@ -14,6 +14,7 @@ $default-duration: 3s;
   @return $number / ($number * 0 + 1);
 }
 
+// Mixin for the ui-spinner. Paramters use defaults from above if none passed in.
 @mixin ui-spinner(
     $hole-color: $default-hole-color,
     $size: $default-size,
@@ -33,6 +34,8 @@ $default-duration: 3s;
             @include experimental(animation-duration, $duration);
         }
 
+        // This is the 'hole' that creates the ring. It's size is determined by the
+        // size of the spinner.
         &:after {
             $hole-size: round((strip-units($size)*.6)) + px;
             $hole-position: round((strip-units($size)*.2)) + px;
@@ -48,6 +51,8 @@ $default-duration: 3s;
         }
     }
 }
+
+// Keyframes for each browser that flip the boxes around.
 
 @-webkit-keyframes ui-spinner-rotate-right {
     0% {    -webkit-transform: rotate(0deg); }
@@ -96,6 +101,11 @@ $default-duration: 3s;
     75% {   transform: rotate(180deg); }
     100% {  transform: rotate(360deg); }
 }
+
+
+// The basic CSS for the spinner. Each '.side' takes turns spinning
+// to reveal the left/right side filling or emptying.
+// The damn thing is so complicated I barely understand it anymore.
 
 .ui-spinner {
     position: relative;
