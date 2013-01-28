@@ -10,6 +10,7 @@ The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own 
 - Firefox 18+
 - IE 10+
 - Opera 12+
+- Safari 6+
 - iOS 5 &amp; 6 (scrolling pauses animation)
 
 A standard 32x32 animated gif throbber is provided as a fallback for older versions of IE. It is centered where the spinner animation would have been.
@@ -50,7 +51,7 @@ A standard 32x32 animated gif throbber is provided as a fallback for older versi
 | Opacity | The opacity of the spinner      |    .8 |
 | Duration | Speed of the spinner     |   3s |
 
-The hole color is just to fake a ring spinner. You have to match the color you pass into the mixin to the background-color that the spinner will appear against.
+*The hole color is just to fake a ring spinner. You have to match the color you pass into the mixin to the background-color that the spinner will appear against.
 
 
 ## Don't Use Sass?
