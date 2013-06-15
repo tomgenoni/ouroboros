@@ -3,6 +3,7 @@
 See blog entry at [http://atomeye.com/projects/sass-css-spinner.html](http://atomeye.com/projects/sass-css-spinner.html) for more details.
 
 The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own tail. Inspired by application progress spinners this provides an imageless 'throbber' for modern browsers that eats itself (in a way).
+The name comes after the greek words ουρά (tail) + βόρος (eater / devourer).
 
 ## Browser Support
 
