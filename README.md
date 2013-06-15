@@ -10,7 +10,7 @@ The Ouroboros is an ancient symbol depicting a serpent or dragon eating its own 
 - Firefox 18+
 - IE 10+
 - Opera 12+
-- Safari 6+
+- Safari 5+
 - iOS 5 &amp; 6 (scrolling pauses animation)
 
 A standard 32x32 animated gif throbber is provided as a fallback for older versions of IE. It is centered where the spinner animation would have been.
